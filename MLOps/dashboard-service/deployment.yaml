@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dashboard-service
+  template:
+    metadata:
+      labels:
+        app: dashboard-service
+    spec:
+      containers:
+      - name: dashboard-service
+        image: gcr.io/nycdsa-project-4/dashboard-service:latest
+        volumeMounts:
+        - name: google-cloud-key
+          mountPath: "/var/secrets/google"
+          readOnly: true
+        env:
+        - name: DB_HOST
+          value: 172.30.192.3
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: cloudsql-db-credentials
+              key: username
+        - name: DB_PASS
+          valueFrom:
+            secretKeyRef:
+              name: cloudsql-db-credentials
+              key: password
+      volumes:
+      - name: google-cloud-key
+        secret:
+          secretName: my-google-service-account

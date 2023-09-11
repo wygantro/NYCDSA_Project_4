@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predict-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: predict-service
+  template:
+    metadata:
+      labels:
+        app: predict-service
+    spec:
+      containers:
+      - name: predict-service
+        image: gcr.io/nycdsa-project-4/predict-service:latest
+        env:
+        - name: DB_HOST
+          value: 172.30.192.3
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: cloudsql-db-credentials
+              key: username
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cloudsql-db-credentials
+              key: password

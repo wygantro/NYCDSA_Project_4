@@ -1,0 +1,44 @@
+[2023-09-03 12:01:45,178] INFO:predict-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-03 12:01:45,898] INFO:predict-service:34:tables do not exist
+[2023-09-03 12:01:45,899] INFO:predict-service:36:creating database models
+[2023-09-03 12:01:46,235] INFO:predict-service:40:database models created
+[2023-09-03 12:01:46,235] INFO:predict-service:47:creating database sessions
+[2023-09-03 12:01:46,236] INFO:predict-service:50:database sessions created
+[2023-09-03 12:01:46,274] INFO:predict-service:53:database connection closed
+[2023-09-03 12:01:46,274] INFO:predict-service:7:ETL_predict.py starting
+[2023-09-03 12:01:47,017] INFO:predict-service:14:database connection successful
+[2023-09-03 12:01:47,110] INFO:predict-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-03 12:01:48,286] INFO:predict-service:23:df_ETL_predict created
+[2023-09-03 12:01:48,332] INFO:predict-service:25:database connection closed
+[2023-09-03 12:01:48,342] INFO:predict-service:30:df_ETL_predict: [0, 0] missing values found
+[2023-09-03 12:01:48,373] INFO:predict-service:35:df_ETL_predict: missing values filled and downsampling complete
+[2023-09-03 12:01:48,385] INFO:predict-service:41:df_ETL_predict: smoothing to running average and resizing complete
+[2023-09-03 12:01:48,392] INFO:predict-service:48:df_ETL_predict: update datatype and column names
+[2023-09-03 12:01:48,400] INFO:predict-service:51:df_ETL_predict: save and load CSV file
+[2023-09-03 12:01:48,401] INFO:predict-service:52:ETL_predict.py complete
+[2023-09-03 12:01:50,758] INFO:predict-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-03 12:01:51,231] INFO:predict-service:34:tables do not exist
+[2023-09-03 12:01:51,231] INFO:predict-service:36:creating database models
+[2023-09-03 12:01:51,437] INFO:predict-service:40:database models created
+[2023-09-03 12:01:51,438] INFO:predict-service:47:creating database sessions
+[2023-09-03 12:01:51,439] INFO:predict-service:50:database sessions created
+[2023-09-03 12:01:51,479] INFO:predict-service:53:database connection closed
+[2023-09-03 12:01:53,115] INFO:predict-service:13:predict.py starting
+[2023-09-03 12:01:53,115] INFO:predict-service:16:query best parameters from model_train_directory and convert to list of integers
+[2023-09-03 12:01:53,608] INFO:predict-service:21:best parameters: (1, 0, 0) for model 2023-09-03_13:03:40.014660_statsmodels.tsa.arima.model.ARI
+[2023-09-03 12:01:53,655] INFO:predict-service:23:connection closed
+[2023-09-03 12:01:53,656] INFO:predict-service:30:loading df_ETL_predict.csv
+[2023-09-03 12:01:53,669] INFO:predict-service:34:df start time: 2023-09-03 08:04:47.431479
+[2023-09-03 12:01:53,670] INFO:predict-service:37:refitting ARIMA model and loading best parameters
+[2023-09-03 12:01:53,807] INFO:predict-service:41:forecasting price list
+[2023-09-03 12:01:54,845] INFO:predict-service:54:feature-service-db connection successful
+[2023-09-03 12:01:59,056] INFO:predict-service:86:database connection closed
+[2023-09-03 12:01:59,785] INFO:predict-service:92:feature-service-db connection successful
+[2023-09-03 12:02:35,208] WARNING:predict-service:125:database does not exist or connection invalid
+[2023-09-03 12:02:35,210] INFO:predict-service:127:rollback session
+[2023-09-03 12:02:35,211] INFO:predict-service:131:database connection closed
+[2023-09-03 12:02:35,892] INFO:predict-service:138:feature-service-db connection successful
+[2023-09-03 12:02:35,895] INFO:predict-service:140:adding prediction_summary_insert_values
+[2023-09-03 12:02:35,897] WARNING:predict-service:151:database does not exist or connection invalid
+[2023-09-03 12:02:35,900] INFO:predict-service:153:rollback session
+[2023-09-03 12:02:35,902] INFO:predict-service:157:database connection closed

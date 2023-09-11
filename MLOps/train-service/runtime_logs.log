@@ -1,0 +1,536 @@
+[2023-08-28 12:42:50,165] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:42:50,650] INFO:train-service:35:tables do not exist
+[2023-08-28 12:42:50,651] INFO:train-service:37:creating database models
+[2023-08-28 12:42:50,855] INFO:train-service:41:database models created
+[2023-08-28 12:42:50,896] INFO:train-service:49:database connection closed
+[2023-08-28 12:42:50,898] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 12:42:51,560] INFO:train-service:14:database connection successful
+[2023-08-28 12:42:51,653] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:42:52,405] INFO:train-service:23:df_ETL_train created
+[2023-08-28 12:42:52,448] INFO:train-service:25:database connection closed
+[2023-08-28 12:42:52,452] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 12:42:52,457] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 12:42:52,460] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 12:42:52,462] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 12:42:52,469] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 12:42:52,470] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 12:42:54,478] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:42:54,965] INFO:train-service:44:Tables exist
+[2023-08-28 12:42:54,980] INFO:train-service:46:Table: model_directory
+[2023-08-28 12:42:55,018] INFO:train-service:49:database connection closed
+[2023-08-28 12:42:56,266] INFO:train-service:16:train.py starting
+[2023-08-28 12:42:56,266] INFO:train-service:18:loading df_ETL_train.csv
+[2023-08-28 12:42:56,266] INFO:train-service:21:df start time: 2023-08-28 08:45:46.783551
+[2023-08-28 12:42:56,266] INFO:train-service:24:df end time: 2023-08-28 16:45:16.038369
+[2023-08-28 12:42:56,266] INFO:train-service:26:split into train and test data
+[2023-08-28 12:42:56,266] INFO:train-service:32:train data range 465 minutes
+[2023-08-28 12:42:56,266] INFO:train-service:35:test data range 15 minutes
+[2023-08-28 12:42:56,266] INFO:train-service:38:grid search starting
+[2023-08-28 12:43:40,590] INFO:train-service:82:grid search complete
+[2023-08-28 12:43:40,590] INFO:train-service:83:Grid search elasped time 44.3249 seconds
+[2023-08-28 12:43:40,590] INFO:train-service:84:best score mean squared error from grid search 2.0468819897413537
+[2023-08-28 12:43:40,590] INFO:train-service:85:best parameters from grid search (4, 2, 4)
+[2023-08-28 12:43:40,590] INFO:train-service:101:df converted to binary
+[2023-08-28 12:43:41,298] INFO:train-service:111:connected to train-service database
+[2023-08-28 12:43:41,428] INFO:train-service:151:database does not exist or connection invalid
+[2023-08-28 12:43:41,428] INFO:train-service:153:train.py complete
+[2023-08-28 12:50:35,962] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:50:36,391] INFO:train-service:44:Tables exist
+[2023-08-28 12:50:36,391] INFO:train-service:46:Table: model_directory
+[2023-08-28 12:50:36,429] INFO:train-service:49:database connection closed
+[2023-08-28 12:50:37,797] INFO:train-service:16:train.py starting
+[2023-08-28 12:50:37,800] INFO:train-service:18:loading df_ETL_train.csv
+[2023-08-28 12:50:37,806] INFO:train-service:21:df start time: 2023-08-28 08:45:46.783551
+[2023-08-28 12:50:37,807] INFO:train-service:24:df end time: 2023-08-28 16:45:16.038369
+[2023-08-28 12:50:37,807] INFO:train-service:26:split into train and test data
+[2023-08-28 12:50:37,807] INFO:train-service:32:train data range 465 minutes
+[2023-08-28 12:50:37,807] INFO:train-service:35:test data range 15 minutes
+[2023-08-28 12:50:37,808] INFO:train-service:38:grid search starting
+[2023-08-28 12:51:24,470] INFO:train-service:82:grid search complete
+[2023-08-28 12:51:24,470] INFO:train-service:83:Grid search elasped time 46.6615 seconds
+[2023-08-28 12:51:24,470] INFO:train-service:84:best score mean squared error from grid search 2.0468819897413537
+[2023-08-28 12:51:24,471] INFO:train-service:85:best parameters from grid search (4, 2, 4)
+[2023-08-28 12:51:24,471] INFO:train-service:101:training dataframe converted to binary
+[2023-08-28 12:51:25,162] INFO:train-service:111:connected to train-service-db
+[2023-08-28 12:51:25,163] INFO:train-service:114:adding values to train-service-db
+[2023-08-28 12:51:25,165] INFO:train-service:146:committing values to train-service-db
+[2023-08-28 12:57:07,229] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:57:07,713] INFO:train-service:35:tables do not exist
+[2023-08-28 12:57:07,728] INFO:train-service:37:creating database models
+[2023-08-28 12:57:07,947] INFO:train-service:41:database models created
+[2023-08-28 12:57:07,995] INFO:train-service:49:database connection closed
+[2023-08-28 12:57:08,009] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 12:57:08,701] INFO:train-service:14:database connection successful
+[2023-08-28 12:57:08,791] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:57:09,594] INFO:train-service:23:df_ETL_train created
+[2023-08-28 12:57:09,642] INFO:train-service:25:database connection closed
+[2023-08-28 12:57:09,645] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 12:57:09,649] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 12:57:09,653] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 12:57:09,655] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 12:57:09,661] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 12:57:09,662] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 12:57:11,832] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:57:12,291] INFO:train-service:44:Tables exist
+[2023-08-28 12:57:12,291] INFO:train-service:46:Table: model_train_directory
+[2023-08-28 12:57:12,335] INFO:train-service:49:database connection closed
+[2023-08-28 12:57:13,559] INFO:train-service:16:train.py starting
+[2023-08-28 12:57:13,559] INFO:train-service:18:loading df_ETL_train.csv
+[2023-08-28 12:57:13,580] INFO:train-service:21:df start time: 2023-08-28 08:59:47.658825
+[2023-08-28 12:57:13,581] INFO:train-service:24:df end time: 2023-08-28 16:59:16.883489
+[2023-08-28 12:57:13,581] INFO:train-service:26:split into train and test data
+[2023-08-28 12:57:13,582] INFO:train-service:32:train data range 465 minutes
+[2023-08-28 12:57:13,582] INFO:train-service:35:test data range 15 minutes
+[2023-08-28 12:57:13,583] INFO:train-service:37:grid search starting
+[2023-08-28 12:57:16,367] INFO:train-service:78:grid search complete
+[2023-08-28 12:57:16,367] INFO:train-service:79:Grid search elasped time 2.7846 seconds
+[2023-08-28 12:57:16,367] INFO:train-service:80:best score mean squared error from grid search 0.4202047129049114
+[2023-08-28 12:57:16,367] INFO:train-service:81:best parameters from grid search (2, 0, 2)
+[2023-08-28 12:57:16,367] INFO:train-service:97:training dataframe converted to binary
+[2023-08-28 12:57:17,293] INFO:train-service:104:connected to train-service-db
+[2023-08-28 12:57:17,293] INFO:train-service:107:adding values to train-service-db
+[2023-08-28 12:57:17,303] INFO:train-service:139:committing values to train-service-db
+[2023-08-28 12:57:17,439] INFO:train-service:146:database does not exist or connection invalid
+[2023-08-28 12:57:17,439] INFO:train-service:148:train.py complete
+[2023-08-28 12:59:10,626] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:59:11,092] INFO:train-service:44:Tables exist
+[2023-08-28 12:59:11,092] INFO:train-service:46:Table: model_train_directory
+[2023-08-28 12:59:11,145] INFO:train-service:49:database connection closed
+[2023-08-28 12:59:11,148] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 12:59:11,850] INFO:train-service:14:database connection successful
+[2023-08-28 12:59:11,924] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:59:12,727] INFO:train-service:23:df_ETL_train created
+[2023-08-28 12:59:12,767] INFO:train-service:25:database connection closed
+[2023-08-28 12:59:12,776] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 12:59:12,787] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 12:59:12,792] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 12:59:12,798] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 12:59:12,808] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 12:59:12,808] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 12:59:14,795] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 12:59:15,251] INFO:train-service:44:Tables exist
+[2023-08-28 12:59:15,251] INFO:train-service:46:Table: model_train_directory
+[2023-08-28 12:59:15,292] INFO:train-service:49:database connection closed
+[2023-08-28 12:59:16,502] INFO:train-service:16:train.py starting
+[2023-08-28 12:59:16,502] INFO:train-service:18:loading df_ETL_train.csv
+[2023-08-28 12:59:16,519] INFO:train-service:21:df start time: 2023-08-28 09:01:47.779790
+[2023-08-28 12:59:16,519] INFO:train-service:24:df end time: 2023-08-28 17:01:17.003201
+[2023-08-28 12:59:16,519] INFO:train-service:26:split into train and test data
+[2023-08-28 12:59:16,519] INFO:train-service:32:train data range 465 minutes
+[2023-08-28 12:59:16,519] INFO:train-service:35:test data range 15 minutes
+[2023-08-28 12:59:16,519] INFO:train-service:37:grid search starting
+[2023-08-28 12:59:19,294] INFO:train-service:78:grid search complete
+[2023-08-28 12:59:19,294] INFO:train-service:79:Grid search elasped time 2.7745 seconds
+[2023-08-28 12:59:19,294] INFO:train-service:80:best score mean squared error from grid search 1.482939954552356
+[2023-08-28 12:59:19,294] INFO:train-service:81:best parameters from grid search (0, 1, 2)
+[2023-08-28 12:59:19,294] INFO:train-service:97:training dataframe converted to binary
+[2023-08-28 12:59:19,969] INFO:train-service:104:connected to train-service-db
+[2023-08-28 12:59:19,969] INFO:train-service:107:adding values to train-service-db
+[2023-08-28 12:59:19,969] INFO:train-service:140:committing values to train-service-db
+[2023-08-28 13:01:15,993] INFO:train-service:28:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:01:16,459] INFO:train-service:44:Tables exist
+[2023-08-28 13:01:16,459] INFO:train-service:46:Table: model_train_directory
+[2023-08-28 13:01:16,497] INFO:train-service:49:database connection closed
+[2023-08-28 13:01:18,289] INFO:train-service:16:train.py starting
+[2023-08-28 13:01:18,289] INFO:train-service:18:loading df_ETL_train.csv
+[2023-08-28 13:01:18,305] INFO:train-service:21:df start time: 2023-08-28 09:01:47.779790
+[2023-08-28 13:01:18,305] INFO:train-service:24:df end time: 2023-08-28 17:01:17.003201
+[2023-08-28 13:01:18,305] INFO:train-service:26:split into train and test data
+[2023-08-28 13:01:18,305] INFO:train-service:32:train data range 465 minutes
+[2023-08-28 13:01:18,305] INFO:train-service:35:test data range 15 minutes
+[2023-08-28 13:01:18,305] INFO:train-service:37:grid search starting
+[2023-08-28 13:01:21,240] INFO:train-service:78:grid search complete
+[2023-08-28 13:01:21,240] INFO:train-service:79:Grid search elasped time 2.9348 seconds
+[2023-08-28 13:01:21,240] INFO:train-service:80:best score mean squared error from grid search 1.482939954552356
+[2023-08-28 13:01:21,240] INFO:train-service:81:best parameters from grid search (0, 1, 2)
+[2023-08-28 13:01:21,240] INFO:train-service:97:training dataframe converted to binary
+[2023-08-28 13:01:22,214] INFO:train-service:104:connected to train-service-db
+[2023-08-28 13:01:22,214] INFO:train-service:107:adding values to train-service-db
+[2023-08-28 13:01:22,214] INFO:train-service:149:committing values to train-service-db
+[2023-08-28 13:05:31,067] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:05:31,561] INFO:train-service:34:tables do not exist
+[2023-08-28 13:05:31,561] INFO:train-service:36:creating database models
+[2023-08-28 13:05:32,337] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:05:32,800] INFO:train-service:34:tables do not exist
+[2023-08-28 13:05:32,800] INFO:train-service:36:creating database models
+[2023-08-28 13:05:32,800] INFO:train-service:40:database models created
+[2023-08-28 13:05:32,800] INFO:train-service:47:creating database sessions
+[2023-08-28 13:05:32,800] INFO:train-service:50:database sessions created
+[2023-08-28 13:05:32,852] INFO:train-service:53:database connection closed
+[2023-08-28 13:05:33,028] INFO:train-service:40:database models created
+[2023-08-28 13:05:33,031] INFO:train-service:47:creating database sessions
+[2023-08-28 13:05:33,033] INFO:train-service:50:database sessions created
+[2023-08-28 13:05:33,073] INFO:train-service:53:database connection closed
+[2023-08-28 13:13:14,572] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:13:15,028] INFO:train-service:43:Tables exist
+[2023-08-28 13:13:15,028] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:13:15,029] INFO:train-service:47:creating database sessions
+[2023-08-28 13:13:15,030] INFO:train-service:50:database sessions created
+[2023-08-28 13:13:15,069] INFO:train-service:53:database connection closed
+[2023-08-28 13:13:16,305] INFO:train-service:17:train.py starting
+[2023-08-28 13:13:16,306] INFO:train-service:19:loading df_ETL_train.csv
+[2023-08-28 13:13:16,310] INFO:train-service:22:df start time: 2023-08-28 09:01:47.779790
+[2023-08-28 13:13:16,311] INFO:train-service:25:df end time: 2023-08-28 17:01:17.003201
+[2023-08-28 13:13:16,311] INFO:train-service:27:split into train and test data
+[2023-08-28 13:13:16,312] INFO:train-service:33:train data range 465 minutes
+[2023-08-28 13:13:16,312] INFO:train-service:36:test data range 15 minutes
+[2023-08-28 13:13:16,313] INFO:train-service:38:grid search starting
+[2023-08-28 13:13:19,054] INFO:train-service:79:grid search complete
+[2023-08-28 13:13:19,054] INFO:train-service:80:Grid search elasped time 2.7415 seconds
+[2023-08-28 13:13:19,054] INFO:train-service:81:best score mean squared error from grid search 1.482939954552356
+[2023-08-28 13:13:19,054] INFO:train-service:82:best parameters from grid search (0, 1, 2)
+[2023-08-28 13:13:19,054] INFO:train-service:98:training dataframe converted to binary
+[2023-08-28 13:13:19,054] INFO:train-service:108:adding values to train-service-db
+[2023-08-28 13:15:13,774] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:15:14,228] INFO:train-service:34:tables do not exist
+[2023-08-28 13:15:14,228] INFO:train-service:36:creating database models
+[2023-08-28 13:15:14,429] INFO:train-service:40:database models created
+[2023-08-28 13:15:14,429] INFO:train-service:47:creating database sessions
+[2023-08-28 13:15:14,429] INFO:train-service:50:database sessions created
+[2023-08-28 13:15:14,478] INFO:train-service:53:database connection closed
+[2023-08-28 13:15:14,479] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:15:15,180] INFO:train-service:14:database connection successful
+[2023-08-28 13:15:15,260] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:15:16,087] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:15:16,132] INFO:train-service:25:database connection closed
+[2023-08-28 13:15:16,136] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:15:16,141] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:15:16,144] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:15:16,146] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:15:16,152] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:15:16,153] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:15:18,110] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:15:18,549] INFO:train-service:43:Tables exist
+[2023-08-28 13:15:18,565] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:15:18,565] INFO:train-service:47:creating database sessions
+[2023-08-28 13:15:18,565] INFO:train-service:50:database sessions created
+[2023-08-28 13:15:18,612] INFO:train-service:53:database connection closed
+[2023-08-28 13:15:19,865] INFO:train-service:17:train.py starting
+[2023-08-28 13:15:19,865] INFO:train-service:19:loading df_ETL_train.csv
+[2023-08-28 13:15:19,886] INFO:train-service:22:df start time: 2023-08-28 09:17:48.778379
+[2023-08-28 13:15:19,887] INFO:train-service:25:df end time: 2023-08-28 17:17:17.950486
+[2023-08-28 13:15:19,888] INFO:train-service:27:split into train and test data
+[2023-08-28 13:15:19,889] INFO:train-service:33:train data range 465 minutes
+[2023-08-28 13:15:19,890] INFO:train-service:36:test data range 15 minutes
+[2023-08-28 13:15:19,891] INFO:train-service:38:grid search starting
+[2023-08-28 13:15:23,158] INFO:train-service:79:grid search complete
+[2023-08-28 13:15:23,158] INFO:train-service:80:Grid search elasped time 3.2674 seconds
+[2023-08-28 13:15:23,158] INFO:train-service:81:best score mean squared error from grid search 39.1429178230728
+[2023-08-28 13:15:23,158] INFO:train-service:82:best parameters from grid search (0, 2, 0)
+[2023-08-28 13:15:23,158] INFO:train-service:98:training dataframe converted to binary
+[2023-08-28 13:15:23,158] INFO:train-service:108:adding values to train-service-db
+[2023-08-28 13:15:23,348] INFO:train-service:122:committing values to train-service-db
+[2023-08-28 13:26:42,387] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:26:42,828] INFO:train-service:34:tables do not exist
+[2023-08-28 13:26:42,828] INFO:train-service:36:creating database models
+[2023-08-28 13:26:43,011] INFO:train-service:40:database models created
+[2023-08-28 13:26:43,011] INFO:train-service:47:creating database sessions
+[2023-08-28 13:26:43,011] INFO:train-service:50:database sessions created
+[2023-08-28 13:26:43,060] INFO:train-service:53:database connection closed
+[2023-08-28 13:26:43,061] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:26:43,754] INFO:train-service:14:database connection successful
+[2023-08-28 13:26:43,832] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:26:44,901] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:26:44,948] INFO:train-service:25:database connection closed
+[2023-08-28 13:26:44,952] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:26:44,957] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:26:44,960] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:26:44,962] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:26:44,970] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:26:44,971] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:26:46,921] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:26:47,387] INFO:train-service:43:Tables exist
+[2023-08-28 13:26:47,387] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:26:47,387] INFO:train-service:47:creating database sessions
+[2023-08-28 13:26:47,387] INFO:train-service:50:database sessions created
+[2023-08-28 13:26:47,430] INFO:train-service:53:database connection closed
+[2023-08-28 13:26:48,662] INFO:train-service:15:train.py starting
+[2023-08-28 13:26:48,662] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:26:48,670] INFO:train-service:20:df start time: 2023-08-28 09:29:49.522781
+[2023-08-28 13:26:48,670] INFO:train-service:23:df end time: 2023-08-28 17:29:18.680674
+[2023-08-28 13:26:48,670] INFO:train-service:25:split into train and test data
+[2023-08-28 13:26:48,670] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:26:48,670] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:26:48,670] INFO:train-service:36:grid search starting
+[2023-08-28 13:26:52,079] INFO:train-service:77:grid search complete
+[2023-08-28 13:26:52,079] INFO:train-service:78:Grid search elasped time 3.4081 seconds
+[2023-08-28 13:26:52,079] INFO:train-service:79:best score mean squared error from grid search 22.899079346927003
+[2023-08-28 13:26:52,079] INFO:train-service:80:best parameters from grid search (1, 0, 0)
+[2023-08-28 13:26:52,079] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:26:52,079] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:26:52,276] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:26:52,276] INFO:train-service:119:train.py complete
+[2023-08-28 13:27:33,517] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:27:33,960] INFO:train-service:43:Tables exist
+[2023-08-28 13:27:33,960] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:27:33,976] INFO:train-service:47:creating database sessions
+[2023-08-28 13:27:33,976] INFO:train-service:50:database sessions created
+[2023-08-28 13:27:34,023] INFO:train-service:53:database connection closed
+[2023-08-28 13:27:34,026] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:27:34,739] INFO:train-service:14:database connection successful
+[2023-08-28 13:27:34,822] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:27:35,655] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:27:35,703] INFO:train-service:25:database connection closed
+[2023-08-28 13:27:35,706] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:27:35,711] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:27:35,715] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:27:35,718] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:27:35,724] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:27:35,724] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:27:37,709] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:27:38,141] INFO:train-service:43:Tables exist
+[2023-08-28 13:27:38,142] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:27:38,142] INFO:train-service:47:creating database sessions
+[2023-08-28 13:27:38,143] INFO:train-service:50:database sessions created
+[2023-08-28 13:27:38,180] INFO:train-service:53:database connection closed
+[2023-08-28 13:27:40,231] INFO:train-service:15:train.py starting
+[2023-08-28 13:27:40,231] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:27:40,252] INFO:train-service:20:df start time: 2023-08-28 09:30:49.585306
+[2023-08-28 13:27:40,253] INFO:train-service:23:df end time: 2023-08-28 17:30:18.741967
+[2023-08-28 13:27:40,254] INFO:train-service:25:split into train and test data
+[2023-08-28 13:27:40,255] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:27:40,256] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:27:40,257] INFO:train-service:36:grid search starting
+[2023-08-28 13:27:44,167] INFO:train-service:77:grid search complete
+[2023-08-28 13:27:44,168] INFO:train-service:78:Grid search elasped time 3.9104 seconds
+[2023-08-28 13:27:44,168] INFO:train-service:79:best score mean squared error from grid search 42.692702098458355
+[2023-08-28 13:27:44,169] INFO:train-service:80:best parameters from grid search (1, 0, 0)
+[2023-08-28 13:27:44,169] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:27:44,170] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:27:44,352] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:27:44,353] INFO:train-service:119:train.py complete
+[2023-08-28 13:28:34,409] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:28:34,855] INFO:train-service:45:Tables exist
+[2023-08-28 13:28:34,855] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:28:34,855] INFO:train-service:49:creating database sessions
+[2023-08-28 13:28:34,855] INFO:train-service:52:database sessions created
+[2023-08-28 13:28:34,905] INFO:train-service:55:database connection closed
+[2023-08-28 13:28:34,908] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:28:35,619] INFO:train-service:14:database connection successful
+[2023-08-28 13:28:35,706] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:28:36,785] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:28:36,838] INFO:train-service:25:database connection closed
+[2023-08-28 13:28:36,843] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:28:36,851] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:28:36,855] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:28:36,861] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:28:36,868] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:28:36,868] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:28:38,845] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:28:39,317] INFO:train-service:45:Tables exist
+[2023-08-28 13:28:39,317] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:28:39,317] INFO:train-service:49:creating database sessions
+[2023-08-28 13:28:39,317] INFO:train-service:52:database sessions created
+[2023-08-28 13:28:39,364] INFO:train-service:55:database connection closed
+[2023-08-28 13:28:40,671] INFO:train-service:15:train.py starting
+[2023-08-28 13:28:40,671] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:28:40,699] INFO:train-service:20:df start time: 2023-08-28 09:31:49.644459
+[2023-08-28 13:28:40,700] INFO:train-service:23:df end time: 2023-08-28 17:31:18.802516
+[2023-08-28 13:28:40,700] INFO:train-service:25:split into train and test data
+[2023-08-28 13:28:40,701] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:28:40,701] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:28:40,702] INFO:train-service:36:grid search starting
+[2023-08-28 13:28:44,127] INFO:train-service:77:grid search complete
+[2023-08-28 13:28:44,127] INFO:train-service:78:Grid search elasped time 3.4255 seconds
+[2023-08-28 13:28:44,127] INFO:train-service:79:best score mean squared error from grid search 68.84541950688264
+[2023-08-28 13:28:44,127] INFO:train-service:80:best parameters from grid search (1, 0, 0)
+[2023-08-28 13:28:44,127] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:28:44,127] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:28:44,317] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:28:44,317] INFO:train-service:119:train.py complete
+[2023-08-28 13:30:16,757] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:17,511] INFO:train-service:36:tables do not exist
+[2023-08-28 13:30:17,527] INFO:train-service:38:creating database models
+[2023-08-28 13:30:17,695] INFO:train-service:42:database models created
+[2023-08-28 13:30:17,695] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:17,712] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:17,752] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:17,753] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:30:18,436] INFO:train-service:14:database connection successful
+[2023-08-28 13:30:18,524] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:19,297] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:30:19,342] INFO:train-service:25:database connection closed
+[2023-08-28 13:30:19,345] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:30:19,351] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:30:19,354] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:30:19,356] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:30:19,364] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:30:19,365] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:30:21,587] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:22,041] INFO:train-service:45:Tables exist
+[2023-08-28 13:30:22,041] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:30:22,041] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:22,041] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:22,088] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:23,344] INFO:train-service:15:train.py starting
+[2023-08-28 13:30:23,344] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:30:23,359] INFO:train-service:20:df start time: 2023-08-28 09:32:49.706147
+[2023-08-28 13:30:23,359] INFO:train-service:23:df end time: 2023-08-28 17:32:18.863941
+[2023-08-28 13:30:23,359] INFO:train-service:25:split into train and test data
+[2023-08-28 13:30:23,359] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:30:23,359] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:30:23,359] INFO:train-service:36:grid search starting
+[2023-08-28 13:30:27,093] INFO:train-service:77:grid search complete
+[2023-08-28 13:30:27,093] INFO:train-service:78:Grid search elasped time 3.7335 seconds
+[2023-08-28 13:30:27,093] INFO:train-service:79:best score mean squared error from grid search 7.4420906211105295
+[2023-08-28 13:30:27,093] INFO:train-service:80:best parameters from grid search (1, 2, 0)
+[2023-08-28 13:30:27,093] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:30:27,093] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:30:27,276] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:30:27,276] INFO:train-service:119:train.py complete
+[2023-08-28 13:30:31,497] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:31,952] INFO:train-service:45:Tables exist
+[2023-08-28 13:30:31,952] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:30:31,952] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:31,952] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:32,000] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:32,001] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:30:32,956] INFO:train-service:14:database connection successful
+[2023-08-28 13:30:33,042] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:33,818] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:30:33,861] INFO:train-service:25:database connection closed
+[2023-08-28 13:30:33,868] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:30:33,874] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:30:33,878] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:30:33,883] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:30:33,891] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:30:33,892] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:30:35,887] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:36,343] INFO:train-service:45:Tables exist
+[2023-08-28 13:30:36,343] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:30:36,343] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:36,355] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:36,393] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:37,628] INFO:train-service:15:train.py starting
+[2023-08-28 13:30:37,628] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:30:37,643] INFO:train-service:20:df start time: 2023-08-28 09:33:49.768415
+[2023-08-28 13:30:37,643] INFO:train-service:23:df end time: 2023-08-28 17:33:18.930168
+[2023-08-28 13:30:37,643] INFO:train-service:25:split into train and test data
+[2023-08-28 13:30:37,655] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:30:37,656] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:30:37,656] INFO:train-service:36:grid search starting
+[2023-08-28 13:30:41,422] INFO:train-service:77:grid search complete
+[2023-08-28 13:30:41,422] INFO:train-service:78:Grid search elasped time 3.7656 seconds
+[2023-08-28 13:30:41,422] INFO:train-service:79:best score mean squared error from grid search 2.801850297225381
+[2023-08-28 13:30:41,422] INFO:train-service:80:best parameters from grid search (2, 2, 0)
+[2023-08-28 13:30:41,438] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:30:41,438] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:30:41,609] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:30:41,609] INFO:train-service:119:train.py complete
+[2023-08-28 13:30:44,993] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:45,440] INFO:train-service:45:Tables exist
+[2023-08-28 13:30:45,455] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:30:45,455] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:45,461] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:45,509] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:45,510] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:30:46,174] INFO:train-service:14:database connection successful
+[2023-08-28 13:30:46,255] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:47,070] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:30:47,109] INFO:train-service:25:database connection closed
+[2023-08-28 13:30:47,127] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:30:47,156] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:30:47,164] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:30:47,173] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:30:47,183] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:30:47,185] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:30:49,155] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:30:49,612] INFO:train-service:45:Tables exist
+[2023-08-28 13:30:49,612] INFO:train-service:47:Table: model_train_directory
+[2023-08-28 13:30:49,612] INFO:train-service:49:creating database sessions
+[2023-08-28 13:30:49,612] INFO:train-service:52:database sessions created
+[2023-08-28 13:30:49,661] INFO:train-service:55:database connection closed
+[2023-08-28 13:30:51,054] INFO:train-service:15:train.py starting
+[2023-08-28 13:30:51,054] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:30:51,069] INFO:train-service:20:df start time: 2023-08-28 09:33:49.768415
+[2023-08-28 13:30:51,069] INFO:train-service:23:df end time: 2023-08-28 17:33:18.930168
+[2023-08-28 13:30:51,069] INFO:train-service:25:split into train and test data
+[2023-08-28 13:30:51,078] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:30:51,078] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:30:51,079] INFO:train-service:36:grid search starting
+[2023-08-28 13:30:55,564] INFO:train-service:77:grid search complete
+[2023-08-28 13:30:55,565] INFO:train-service:78:Grid search elasped time 4.4850 seconds
+[2023-08-28 13:30:55,565] INFO:train-service:79:best score mean squared error from grid search 2.801850297225381
+[2023-08-28 13:30:55,566] INFO:train-service:80:best parameters from grid search (2, 2, 0)
+[2023-08-28 13:30:55,566] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:30:55,567] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:30:55,746] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:30:55,747] INFO:train-service:119:train.py complete
+[2023-08-28 13:33:00,376] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:33:00,816] INFO:train-service:43:Tables exist
+[2023-08-28 13:33:00,816] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:33:00,816] INFO:train-service:47:creating database sessions
+[2023-08-28 13:33:00,816] INFO:train-service:50:database sessions created
+[2023-08-28 13:33:00,863] INFO:train-service:53:database connection closed
+[2023-08-28 13:33:00,864] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 13:33:01,539] INFO:train-service:14:database connection successful
+[2023-08-28 13:33:01,619] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:33:02,461] INFO:train-service:23:df_ETL_train created
+[2023-08-28 13:33:02,522] INFO:train-service:25:database connection closed
+[2023-08-28 13:33:02,526] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 13:33:02,530] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 13:33:02,533] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 13:33:02,536] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 13:33:02,542] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 13:33:02,543] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 13:33:04,468] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 13:33:04,912] INFO:train-service:43:Tables exist
+[2023-08-28 13:33:04,912] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 13:33:04,927] INFO:train-service:47:creating database sessions
+[2023-08-28 13:33:04,927] INFO:train-service:50:database sessions created
+[2023-08-28 13:33:04,969] INFO:train-service:53:database connection closed
+[2023-08-28 13:33:06,242] INFO:train-service:15:train.py starting
+[2023-08-28 13:33:06,242] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 13:33:06,258] INFO:train-service:20:df start time: 2023-08-28 09:35:49.891634
+[2023-08-28 13:33:06,258] INFO:train-service:23:df end time: 2023-08-28 17:35:19.055744
+[2023-08-28 13:33:06,258] INFO:train-service:25:split into train and test data
+[2023-08-28 13:33:06,258] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 13:33:06,258] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 13:33:06,267] INFO:train-service:36:grid search starting
+[2023-08-28 13:42:11,449] INFO:train-service:77:grid search complete
+[2023-08-28 13:42:11,449] INFO:train-service:78:Grid search elasped time 545.1826 seconds
+[2023-08-28 13:42:11,449] INFO:train-service:79:best score mean squared error from grid search 1.690710440643221
+[2023-08-28 13:42:11,449] INFO:train-service:80:best parameters from grid search (4, 0, 6)
+[2023-08-28 13:42:11,449] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 13:42:11,449] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 13:42:11,623] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 13:42:11,623] INFO:train-service:119:train.py complete
+[2023-08-28 17:10:42,367] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 17:10:42,828] INFO:train-service:43:Tables exist
+[2023-08-28 17:10:42,828] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 17:10:42,828] INFO:train-service:47:creating database sessions
+[2023-08-28 17:10:42,828] INFO:train-service:50:database sessions created
+[2023-08-28 17:10:42,875] INFO:train-service:53:database connection closed
+[2023-08-28 17:10:42,875] INFO:train-service:7:ETL_train.py starting
+[2023-08-28 17:10:43,532] INFO:train-service:14:database connection successful
+[2023-08-28 17:10:43,619] INFO:train-service:16:PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 17:10:44,394] INFO:train-service:23:df_ETL_train created
+[2023-08-28 17:10:44,443] INFO:train-service:25:database connection closed
+[2023-08-28 17:10:44,448] INFO:train-service:30:df_ETL_train: [0, 0] missing values found
+[2023-08-28 17:10:44,461] INFO:train-service:35:df_ETL_train: missing values filled and downsampling complete
+[2023-08-28 17:10:44,468] INFO:train-service:41:df_ETL_train: smoothing to running average and resizing complete
+[2023-08-28 17:10:44,473] INFO:train-service:48:df_ETL_train: update datatype and column names
+[2023-08-28 17:10:44,482] INFO:train-service:51:df_ETL_train: save and load CSV file
+[2023-08-28 17:10:44,483] INFO:train-service:52:ETL_train.py complete
+[2023-08-28 17:10:46,480] INFO:train-service:27:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-08-28 17:10:46,948] INFO:train-service:43:Tables exist
+[2023-08-28 17:10:46,948] INFO:train-service:45:Table: model_train_directory
+[2023-08-28 17:10:46,948] INFO:train-service:47:creating database sessions
+[2023-08-28 17:10:46,948] INFO:train-service:50:database sessions created
+[2023-08-28 17:10:46,997] INFO:train-service:53:database connection closed
+[2023-08-28 17:10:52,800] INFO:train-service:15:train.py starting
+[2023-08-28 17:10:52,800] INFO:train-service:17:loading df_ETL_train.csv
+[2023-08-28 17:10:52,812] INFO:train-service:20:df start time: 2023-08-28 13:14:03.307882
+[2023-08-28 17:10:52,812] INFO:train-service:23:df end time: 2023-08-28 21:13:32.132208
+[2023-08-28 17:10:52,812] INFO:train-service:25:split into train and test data
+[2023-08-28 17:10:52,813] INFO:train-service:31:train data range 465 minutes
+[2023-08-28 17:10:52,813] INFO:train-service:34:test data range 15 minutes
+[2023-08-28 17:10:52,813] INFO:train-service:36:grid search starting
+[2023-08-28 17:10:55,685] INFO:train-service:77:grid search complete
+[2023-08-28 17:10:55,685] INFO:train-service:78:grid search elasped time 2.8725 seconds
+[2023-08-28 17:10:55,685] INFO:train-service:79:best score mean squared error from grid search 1.534749508255167
+[2023-08-28 17:10:55,685] INFO:train-service:80:best parameters from grid search (1, 1, 1)
+[2023-08-28 17:10:55,690] INFO:train-service:96:training dataframe converted to binary
+[2023-08-28 17:10:55,690] INFO:train-service:99:adding values to train-service-db
+[2023-08-28 17:10:55,877] INFO:train-service:113:updated values committed to train-service-db
+[2023-08-28 17:10:55,892] INFO:train-service:119:train.py complete

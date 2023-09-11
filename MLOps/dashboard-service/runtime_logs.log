@@ -1,0 +1,167 @@
+[2023-09-08 13:17:54,482] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:17:54,514] INFO:dashboard:27:database connection closed
+[2023-09-08 13:17:54,641] INFO:dashboard:37:Tables exist
+[2023-09-08 13:17:54,643] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:17:55,648] INFO:dashboard:16:current price dataframe created
+[2023-09-08 13:17:55,648] INFO:dashboard:29:predict price dataframe created
+[2023-09-08 13:18:01,327] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:01,343] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:01,425] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:01,426] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:01,438] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:18:02,184] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:18:02,272] INFO:dashboard:84:updating dashboard_predict_price_df data
+[2023-09-08 13:18:02,328] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:18:02,329] INFO:dashboard:99:query loop time: 6.673342199996114
+[2023-09-08 13:18:04,695] INFO:dashboard:144:query loop time: 2246990.24967
+[2023-09-08 13:18:05,950] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:05,986] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:06,109] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:06,109] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:06,642] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:12,347] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:12,347] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:23,309] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:23,348] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:23,356] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:23,394] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:23,463] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:23,463] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:23,509] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:23,511] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:24,222] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:18:24,235] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:18:24,251] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:29,887] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:29,888] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:29,916] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:29,917] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:29,963] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:29,965] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:29,975] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:18:30,673] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:18:30,756] INFO:dashboard:84:updating dashboard_predict_price_df data
+[2023-09-08 13:18:30,888] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:18:30,890] INFO:dashboard:99:query loop time: 6.653799999970943
+[2023-09-08 13:18:30,963] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:30,996] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:31,005] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:31,035] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:31,119] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:31,119] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:31,135] INFO:dashboard:144:query loop time: 2247016.6779218
+[2023-09-08 13:18:31,151] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:31,152] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:31,911] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:18:31,921] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:18:31,927] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:37,601] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:37,602] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:37,682] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:37,683] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:37,690] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:18:37,954] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:37,954] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:38,426] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:18:38,512] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:18:38,513] INFO:dashboard:99:query loop time: 6.590521700214595
+[2023-09-08 13:18:38,623] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:38,635] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:38,662] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:38,674] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:38,711] INFO:dashboard:144:query loop time: 2247024.2527542
+[2023-09-08 13:18:38,785] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:38,785] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:38,801] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:38,802] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:39,566] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:18:39,596] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:18:39,651] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:45,252] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:45,252] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:45,321] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:45,322] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:45,336] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:45,337] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:45,343] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:18:45,798] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:45,836] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:45,843] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:45,882] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:45,958] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:45,960] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:46,000] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:46,000] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:46,042] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:18:46,131] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:18:46,132] INFO:dashboard:99:query loop time: 6.534808000084013
+[2023-09-08 13:18:46,392] INFO:dashboard:144:query loop time: 2247031.9338064
+[2023-09-08 13:18:46,954] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:47,019] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:18:47,022] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:18:52,602] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:52,602] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:52,670] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:52,671] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:52,748] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:52,748] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:52,753] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:18:52,761] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:52,780] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:18:52,801] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:52,816] INFO:dashboard:27:database connection closed
+[2023-09-08 13:18:52,922] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:52,923] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:52,943] INFO:dashboard:37:Tables exist
+[2023-09-08 13:18:52,943] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:18:53,450] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:18:53,532] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:18:53,533] INFO:dashboard:99:query loop time: 6.511120600160211
+[2023-09-08 13:18:53,651] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:18:53,655] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:18:53,655] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:18:53,682] INFO:dashboard:144:query loop time: 2247039.2243111
+[2023-09-08 13:18:59,319] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:18:59,320] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:18:59,330] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:18:59,330] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:18:59,407] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:18:59,408] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:18:59,416] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:19:00,093] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:19:00,175] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:19:00,176] INFO:dashboard:99:query loop time: 6.518966000061482
+[2023-09-08 13:19:00,291] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:19:00,291] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:19:00,331] INFO:dashboard:27:database connection closed
+[2023-09-08 13:19:00,335] INFO:dashboard:27:database connection closed
+[2023-09-08 13:19:00,353] INFO:dashboard:144:query loop time: 2247045.8944466
+[2023-09-08 13:19:00,449] INFO:dashboard:37:Tables exist
+[2023-09-08 13:19:00,449] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:19:00,453] INFO:dashboard:37:Tables exist
+[2023-09-08 13:19:00,453] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:19:01,101] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:19:01,102] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:19:01,104] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:19:07,027] INFO:dashboard:17:train-service-db connection successful
+[2023-09-08 13:19:07,027] INFO:dashboard:21:query started from predict-service-db
+[2023-09-08 13:19:07,046] INFO:dashboard:39:feature-service-db connection successful
+[2023-09-08 13:19:07,047] INFO:dashboard:42:query started from feature-service-db
+[2023-09-08 13:19:07,129] INFO:dashboard:51:query complete from feature-service-db
+[2023-09-08 13:19:07,129] INFO:dashboard:55:updating dashboard_current_price_df
+[2023-09-08 13:19:07,135] INFO:dashboard:62:update complete and saving dashboard_current_price_df
+[2023-09-08 13:19:07,400] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:19:07,427] INFO:dashboard:25:database exists: PostgreSQL 15.2 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+[2023-09-08 13:19:07,437] INFO:dashboard:27:database connection closed
+[2023-09-08 13:19:07,466] INFO:dashboard:27:database connection closed
+[2023-09-08 13:19:07,552] INFO:dashboard:37:Tables exist
+[2023-09-08 13:19:07,553] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:19:07,583] INFO:dashboard:37:Tables exist
+[2023-09-08 13:19:07,584] INFO:dashboard:39:Table: price_data
+[2023-09-08 13:19:08,114] INFO:dashboard:71:query started from predict-service-db
+[2023-09-08 13:19:08,200] INFO:dashboard:96:update complete and saving dashboard_predict_price_df
+[2023-09-08 13:19:08,202] INFO:dashboard:99:query loop time: 7.096927700098604
+[2023-09-08 13:19:08,309] INFO:dashboard:21:current price dataframe already exists
+[2023-09-08 13:19:08,315] INFO:dashboard:32:predict price dataframe already exists
+[2023-09-08 13:19:08,336] INFO:dashboard:10:start and initialize model_summary_query loop
+[2023-09-08 13:19:08,404] INFO:dashboard:144:query loop time: 2247053.9454758
