@@ -3,7 +3,7 @@
 from flask import Flask, jsonify
 from datetime import datetime
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, scoped_session
 
 app = Flask(__name__)
 
@@ -24,7 +24,8 @@ def get_energy_consumption_data():
         # connect to db and create session
         db_url = connect_url('energy-consumption-model')
         engine = create_engine(db_url)
-        Session = sessionmaker(bind=engine)
+        session_factory = sessionmaker(bind=engine, autocommit=False, autoflush=False, expire_on_commit=True)
+        Session = scoped_session(session_factory)
         session = Session()
 
         # energy consumption data query
@@ -56,8 +57,9 @@ def get_energy_consumption_data():
 
     except Exception as e:
         session.rollback()
-    
         return jsonify({'error': f'{e}'}), 500
+    finally:
+        Session.remove()
 
 
 if __name__ == '__main__':

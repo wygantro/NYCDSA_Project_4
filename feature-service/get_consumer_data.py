@@ -5,7 +5,7 @@ import time
 import pandas as pd
 
 def fetch_data():
-    url = "https://energy-consumption-api-wpyj5eetua-uc.a.run.app/energy-consumption"
+    url = "https://energy-consumption-api-wpyj5eetua-uc.a.run.app/api/v1/energy-consumption"
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()
@@ -27,7 +27,7 @@ def run_every_minute():
             # Save DataFrame to CSV
             df.to_csv('dataframe.csv', index=False)
             print("Fetched data appended to dataframe")
-        time.sleep(60)
+        time.sleep(1)
 
 if __name__ == "__main__":
     run_every_minute()
