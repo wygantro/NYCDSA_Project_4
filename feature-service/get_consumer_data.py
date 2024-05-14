@@ -27,7 +27,7 @@ def run_every_minute():
             # Save DataFrame to CSV
             df.to_csv('dataframe.csv', index=False)
             print("Fetched data appended to dataframe")
-        time.sleep(1)
+        time.sleep(60)
 
 if __name__ == "__main__":
     run_every_minute()

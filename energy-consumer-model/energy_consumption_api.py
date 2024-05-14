@@ -20,14 +20,14 @@ def get_energy_consumption_data():
     current_time_lower = round_down_dt(datetime.now()).replace(year=1)
     current_time_uppper = round_up_dt(datetime.now()).replace(year=1)
 
+    # connect to db and create session
+    db_url = connect_url('energy-consumption-model')
+    engine = create_engine(db_url, pool_size=10, max_overflow=20)
+    session_factory = sessionmaker(bind=engine, autocommit=False, autoflush=False, expire_on_commit=True)
+    Session = scoped_session(session_factory)
+    session = Session()
+    
     try:
-        # connect to db and create session
-        db_url = connect_url('energy-consumption-model')
-        engine = create_engine(db_url)
-        session_factory = sessionmaker(bind=engine, autocommit=False, autoflush=False, expire_on_commit=True)
-        Session = scoped_session(session_factory)
-        session = Session()
-
         # energy consumption data query
         values_lower = session.query(Energy_consumption_timeseries).filter(Energy_consumption_timeseries.datetime_id == current_time_lower).all()[0]
         values_upper = session.query(Energy_consumption_timeseries).filter(Energy_consumption_timeseries.datetime_id == current_time_uppper).all()[0]
@@ -53,13 +53,13 @@ def get_energy_consumption_data():
             "location_id": location_id
             }
         session.close()
+        Session.remove()
         return jsonify(data)    
 
     except Exception as e:
         session.rollback()
-        return jsonify({'error': f'{e}'}), 500
-    finally:
         Session.remove()
+        return jsonify({'error': f'{e}'}), 500        
 
 
 if __name__ == '__main__':
