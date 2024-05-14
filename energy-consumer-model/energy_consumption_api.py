@@ -40,19 +40,23 @@ def get_energy_consumption_data():
                                            values_lower.dewpoint_value, values_upper.dewpoint_value)
         humidity_value = interpolate_value(current_time, current_time_lower, current_time_uppper,
                                            values_lower.humidity_value, values_upper.humidity_value)
+        location_id = values_lower.location_id
 
         # reformat to json
         data = {
-            "time_stamp": current_time,
+            "time_stamp": datetime.now(),
             "electric_demand": electric_demand,
             "temp_value": temp_value,
             "dewpoint_value": dewpoint_value,
-            "humidity_value": humidity_value
+            "humidity_value": humidity_value,
+            "location_id": location_id
             }
+        session.close()
         return jsonify(data)    
 
     except Exception as e:
         session.rollback()
+    
         return jsonify({'error': f'{e}'}), 500
 
 

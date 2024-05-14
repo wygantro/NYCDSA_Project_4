@@ -16,8 +16,8 @@ EXPOSE 5000
 ENV DB_USER=user
 ENV DB_PASS=postgres
 ENV DB_ENERGY_CONSUMPTION_SERVICE_NAME=energy-consumption-db
-ENV DB_HOST=???
 #ENV DB_HOST=???
+ENV DB_HOST=???
 ENV DB_PORT=5432
 
 CMD ["python", "energy_consumption_api.py"]

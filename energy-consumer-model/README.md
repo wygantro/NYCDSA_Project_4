@@ -21,7 +21,7 @@ gcloud init
 
 2. Build, push and deploy images to Google Cloud Container Registry and Kubernetes Engine
 ```bash
-./energy-consumption-api-gcr.sh
+./energy-consumption-model-api-gcr.sh
 
 #docker inspect <container-id> | grep IPAddress
 ```
