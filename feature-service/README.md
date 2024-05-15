@@ -25,9 +25,9 @@ gcloud init
 
 3. Build docker image
 ```bash
-docker build -t gcr.io/nycdsa-project-4/feature-service:latest .
+#docker build -t gcr.io/timeseries-energy-forecasting-app/feature-service:latest .
 
-# docker run -d -p 7000:7000 gcr.io/nycdsa-project-4/feature-service:latest
+# docker run -d -p 7000:7000 gcr.io/timeseries-energy-forecasting-app/feature-service:latest
 ```
 
 4. Authenticate Docker with Google cloud project
@@ -37,7 +37,7 @@ gcloud auth configure-docker
 
 5. Push image to Google Container Registry
 ```bash
-docker push gcr.io/nycdsa-project-4/feature-service:latest
+#docker push gcr.io/timeseries-energy-forecasting-app/feature-service:latest
 ```
 
 6. Confirm image is located Google Container Registry

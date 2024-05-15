@@ -14,8 +14,8 @@ def fetch_data():
         return None
 
 def run_every_minute():
-    # df = {'dewpoint_value': 6.646, 'electric_demand': 149.587, 'humidity_value': 74.3305, 'temp_value': 11.7967, 'time_stamp': 'Sun, 13 May 0001 22:46:45 GMT'}
-    # # Create an empty DataFrame with specified columns
+    # {'dewpoint_value': 6.646, 'electric_demand': 149.587, 'humidity_value': 74.3305, 'temp_value': 11.7967, 'time_stamp': 'Sun, 13 May 0001 22:46:45 GMT'}
+    # create an empty DataFrame with specified columns
     columns = ['time_stamp', 'electric_demand', 'temp_value', 'humidity_value', 'dewpoint_value']
     df = pd.DataFrame(columns=columns)
     while True:
